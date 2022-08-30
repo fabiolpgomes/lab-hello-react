@@ -1,5 +1,6 @@
 // Componente que representa cada feature do React. Os dados vem todos do componente pai através das props
 
+
 function Feature (props){
     return (
         <div className="feature">

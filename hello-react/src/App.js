@@ -12,7 +12,7 @@ import Feature from './components/Feature';
 const featuresArray = [
   {
     title: "Declarative",
-    image: "./images/icon1.png",
+    image: "./images/icon1.png", 
     description: "React makes it painless to create interactive UIs.",
   },
   {
@@ -37,12 +37,14 @@ function App() {
   return (
     <div className="background">
       <Header />
+      
       <div className='flex-container'>
       <HelloText />
       </div>
       <div className="features-container">
         {/* Para cada elemento da array de features, renderize um componente Feature, passando os dados de cada objeto como props */}
           {featuresArray.map((feature) => (
+            
           <Feature
             key={feature.title}
             title={feature.title}
